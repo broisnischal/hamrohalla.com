@@ -5,7 +5,6 @@
  * @param {*} req The request object
  * @param {*} res The response object
  */
-
 export default function handler(req, res) {
     res.status(200).json({ name: "John Doe" });
 }
