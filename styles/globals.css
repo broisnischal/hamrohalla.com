@@ -1,16 +1,127 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+    --padding: 1.25rem;
+    --inputpadding: 0.75rem;
+    --inputpadding-sm: 0.5rem;
+    --margin: "0.5rem 0";
+    --black: #000000;
+    --grey: #808080;
+    --white: #ffffff;
+    --lightbackground: #f5f5f5;
+    --darkbackground: #2f2f2f;
+    --lighttext: #ffffff;
+    --darktext: #000000;
+    --lightborder: #d9d9d9;
+    --darkborder: #4d4d4d;
+    --lightbutton: #f5f5f5;
+    --darkbutton: #2f2f2f;
+    --lightbuttontext: #000000;
+    --darkbuttontext: #ffffff;
+    --secondary: #00ff73;
+    --danger: #fa3838;
+    --warning: #ffd700;
+    --success: #00ff73;
+    --info: #00bfff;
+    --light: #f5f5f5;
+    --dark: #2f2f2f;
+    --font-sans: "Poppins", -apple-system, system-ui, BlinkMacSystemFont,
+        "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+html {
+    overflow: visible;
+    height: 100%;
+    touch-action: manipulation;
+    line-height: 1.15rem;
+    font-feature-settings: "case" 1, "rlig" 1, "liga" 1, "clig" 1, "calt" 1;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+*:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    overflow: hidden;
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15rem;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="text"] {
+    border-radius: 0;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+@media screen and (min-width: 620px) {
+    body {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
 }
